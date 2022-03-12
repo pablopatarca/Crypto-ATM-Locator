@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ATM Locator</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+    <string name="venues_list_title">Venues 🏧</string>
+</resources>

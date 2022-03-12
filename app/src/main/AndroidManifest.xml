@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.frankenstein.atmlocator">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:name=".App"
+        android:icon="@drawable/ic_atm"
+        android:roundIcon="@drawable/ic_atm"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ATMLocator">
+        <activity
+            android:name=".ui.MapsActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ATMLocator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- https://github.com/google/secrets-gradle-plugin -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+
+    </application>
+
+</manifest>
